@@ -54,7 +54,7 @@ export const Projects =()=>{
               {/* overlay links */}
               <div className="absolute inset-0 flex items-center justify-center gap-8 opacity-0 group-hover:opacity-100">
                 <a href={project.link} className="p-3 rounded-full glass hover:bg-primary " target="_blank" rel="noopener noreferrer"><ArrowUpRight className="w-5 h-5"/> </a>
-                <a href={project.link} className="p-3 rounded-full glass hover:bg-primary " target="_blank" rel="noopener noreferrer"><FaGithub className="w-5 h-5"/></a>
+                <a href={project.github} className="p-3 rounded-full glass hover:bg-primary " target="_blank" rel="noopener noreferrer"><FaGithub className="w-5 h-5"/></a>
               </div>
             </div>
             {/* content */}
