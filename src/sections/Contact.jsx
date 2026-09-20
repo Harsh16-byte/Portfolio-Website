@@ -1,8 +1,31 @@
 import { Mail } from "lucide-react"
+import { useState } from "react"
 
 const contactInfo = [{icon:Mail, label:"Email", value:"aquaprince2021@gmail.com", href:"mailto:aquaprince2021@gmail.com"}]
 
 export const Contact = () => {
+  const [status, setStatus] = useState("")
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setStatus("Sending...")
+    const formData = new FormData(e.target)
+    formData.append("access_key", "946c3d55-3cda-4116-b3de-2c01c1508afd")
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    })
+    const result = await res.json()
+
+    if (result.success) {
+      setStatus("Message sent!")
+      e.target.reset()
+    } else {
+      setStatus("Failed to send, try again.")
+    }
+  }
+
   return (
     <section id="contact" className="py-11 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
@@ -13,7 +36,6 @@ export const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto items-start">
-          {/* Contact info */}
           <div className="space-y-6">
             {contactInfo.map((item, idx) => (
               <a key={idx} href={item.href} className="flex items-center gap-4 glass p-4 rounded-2xl hover:bg-primary/10 transition-all">
@@ -28,13 +50,12 @@ export const Contact = () => {
             ))}
           </div>
 
-          {/* Contact form (Netlify) */}
-          <form name="contact" method="POST" data-netlify="true" className="space-y-4 glass p-6 rounded-2xl">
-            <input type="hidden" name="form-name" value="contact"/>
+          <form onSubmit={handleSubmit} className="space-y-4 glass p-6 rounded-2xl">
             <input type="text" name="name" placeholder="Your Name" required className="w-full p-3 rounded-xl bg-transparent border border-gray-600 focus:border-primary outline-none"/>
             <input type="email" name="email" placeholder="Your Email" required className="w-full p-3 rounded-xl bg-transparent border border-gray-600 focus:border-primary outline-none"/>
             <textarea name="message" placeholder="Your Message" rows="4" required className="w-full p-3 rounded-xl bg-transparent border border-gray-600 focus:border-primary outline-none"/>
             <button type="submit" className="w-full bg-primary text-primary-foreground py-3 rounded-xl font-medium hover:bg-primary/80 transition-all">Send Message</button>
+            {status && <p className="text-sm text-teal-400">{status}</p>}
           </form>
         </div>
       </div>
