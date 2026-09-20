@@ -21,10 +21,10 @@ export const About =()=>{
           <span className="text-primary animation-glow-text"> imagination</span> <span className="font-serif italic font-normal">— that's where I build
           </span></h2>
           <div className="animate-fade-in text-gray-300">
-            <p>"Hi, I'm Harshwardhan 👋 — a curious mind who fell in love with turning blank screens into living, breathing experiences 💻✨.
+            <p>Hi, I'm Harshwardhan 👋 a curious mind who fell in love with turning blank screens into living, breathing experiences 💻✨.
                What started as simple curiosity about how websites work turned into late nights debugging code 🐛, chasing that one missing semicolon 😅,
               and celebrating small wins like a finally-working button 🎉. I'm not here to just write code — I'm here to build things that make 
-              people's lives a little easier, one project at a time 🚀. Still learning, still growing 🌱, but always excited for what's next!"</p>
+              people's lives a little easier, one project at a time 🚀. Still learning, still growing 🌱, but always excited for what's next!</p>
           </div>
           <div className="glass rounded-2xl p-4 glow-border animate-fade-in">
             <p className="font-medium text-pretty">My mission is to build web experiences that are simple, functional, and genuinely useful 🌐 — not just 

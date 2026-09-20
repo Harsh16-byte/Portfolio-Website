@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const navLinks =[
   {href:"#about", label:"About"},
   {href:"#projects",label:"Projects"},  
-  {href:"testimonials",label:"Testimonials"},
+  {href:"#testimonials",label:"Testimonials"},
 ]
 export const Navbar =()=>{
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,11 +22,8 @@ export const Navbar =()=>{
   return (
     <header className={`fixed top-0 left-0 right-0 transition-all ${isScrolled ? "glass-strong py-3":"bg-transparent py-5"} z-50`}>
       <nav className=" mx-auto px-6 flex items-center justify-between">
-        <a
-          href="#"
-          className="text-xl font-bold tracking-tight hover:text-primary"
-        >
-          PM<span className="text-primary">.</span>
+        <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
+          <span className="font-bold hover:text-primary">HW</span>
         </a>
 
         {/* Desktop nav */}
@@ -45,7 +42,7 @@ export const Navbar =()=>{
         </div>
         {/* Contact button */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <a href="#contact"><Button size="sm">Contact Me</Button></a> 
         </div>
         {/* Mobile Menu button*/}
         <button className="md:hidden p-2 text-foreground cursor-pointer" onClick={()=>setIsMobileMenuOpen((prev)=>!prev)}>
