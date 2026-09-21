@@ -61,8 +61,8 @@ export const Hero =()=>{
 
           {/*CTAs*/}
           <div className="flex flex-wrap gap-4 animate-fade-in">
-            <Button size="lg">Contact Me <ArrowRight className="w-5 h-5"/></Button>
-            <AnimatedBorderButton><Download className="w-5 h-5"/>Download CV</AnimatedBorderButton>
+            <a href="#contact"><Button size="lg">Contact Me <ArrowRight className="w-5 h-5"/></Button></a>
+            <a href="/cv.pdf"download><AnimatedBorderButton><Download className="w-5 h-5"/>Download CV</AnimatedBorderButton></a>
           </div>
           {/*social links */}
           <div className="flex items-center animate-fade-in gap-3">
