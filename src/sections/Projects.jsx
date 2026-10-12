@@ -13,13 +13,12 @@ const projects =[
     github:"https://github.com/Harsh16-byte/Airbnb-Clone",
   },
   {
-    title:"Currency converter",
-    description:`A real-time currency converter built with HTML, Tailwind CSS, and JavaScript. It fetches live exchange rates using the Currency API 
-    and displays country flags for a clean, intuitive user experience`,
-    image:"/images/currencyConverter.png",
-    tags:['HTML',"Tailwind CSS","Javascript"],
-    link:"https://storied-basbousa-08a338.netlify.app",
-    github:"https://github.com/Harsh16-byte/Currency-converter",
+    title:"Chat app",
+    description:`A real-time MERN chat app with secure login, instant messaging, and live online status, built with Socket.io and MERN Stack`,
+    image:"/images/chat.png",
+    tags:['HTML',"Tailwind CSS","Javascript","React","NodeJS","ExpressJS","MongoDB","Socket io"],
+    link:"https://sandesh-sz6g.onrender.com",
+    github:"https://github.com/Harsh16-byte/Sandesh-chat-app-",
   },
   {
     title:"Weather App",
