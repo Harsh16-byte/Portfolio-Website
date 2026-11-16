@@ -21,12 +21,12 @@ const projects =[
     github:"https://github.com/Harsh16-byte/Sandesh-chat-app-",
   },
   {
-    title:"Weather App",
-    description:`A responsive weather app built with React that fetches real-time weather data using the OpenWeatherMap API, letting users search any city and instantly view current conditions`,
-    image:"/images/weather.png",
-    tags:['HTML',"Tailwind CSS","Javascript","React"],
-    link:"https://weather-application-harsh.netlify.app",
-    github:"https://github.com/Harsh16-byte/Weather-App",
+    title:"Movie Finder",
+    description:`Movie Finder lets users search for movies by title.It displays posters, release years, and IMDb ratings using the OMDb API.`,
+    image:"/images/Movie Finder.png",
+    tags:['HTML',"CSS","Javascript"],
+    link:"https://harsh16-byte.github.io/movie-finder",
+    github:"https://github.com/Harsh16-byte/movie-finder",
   },
 ]
 
