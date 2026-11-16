@@ -28,6 +28,15 @@ const projects =[
     link:"https://harsh16-byte.github.io/movie-finder",
     github:"https://github.com/Harsh16-byte/movie-finder",
   },
+
+   {
+    title:"Weather App",
+    description:`A responsive weather app built with React that fetches real-time weather data using the OpenWeatherMap API, letting users search any city and instantly view current conditions`,
+    image:"/images/weather.png",
+    tags:['HTML',"Tailwind CSS","Javascript","React"],
+    link:"https://weather-application-harsh.netlify.app",
+    github:"https://github.com/Harsh16-byte/Weather-App",
+  },
 ]
 
 export const Projects =()=>{   
